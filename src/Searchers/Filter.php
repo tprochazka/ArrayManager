@@ -63,7 +63,7 @@ class Filter extends \FilterIterator {
 		return $match;
 	}
 
-	public function accept() {
+	public function accept(): bool {
 		return $this->applyConditions($this->current(), $this);
 	}
 
