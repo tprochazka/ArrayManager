@@ -14,39 +14,39 @@ class Container implements \Iterator, \ArrayAccess {
 		$this->data = $arr;
 	}
 
-	public function offsetExists($offset) {
+	public function offsetExists($offset): bool {
 		return isset($this->data[$offset]);
 	}
 
-	public function offsetGet($offset) {
+	public function offsetGet($offset): mixed {
 		return $this->data[$offset];
 	}
 
-	public function offsetSet($offset, $value) {
+	public function offsetSet($offset, $value): void {
 		$this->data[$offset] = $value;
 	}
 
-	public function offsetUnset($offset) {
+	public function offsetUnset($offset): void {
 		unset($this->data[$offset]);
 	}
 
-	function rewind() {
-		return reset($this->data);
+	function rewind(): void {
+		reset($this->data);
 	}
 
-	function current() {
+	function current(): mixed {
 		return current($this->data);
 	}
 
-	function key() {
+	function key(): mixed {
 		return key($this->data);
 	}
 
-	function next() {
-		return next($this->data);
+	function next(): void {
+		next($this->data);
 	}
 
-	function valid() {
+	function valid(): bool {
 		return !is_null(key($this->data));
 	}
 }
