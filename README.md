@@ -1,16 +1,13 @@
 # Mesour ArrayManager
 
-Searches, updates, inserts and deletes on two dimensional array
-
-- [Author](http://mesour.com)
-- [Contact](http://mesour.com/contact)
+Searches, updates, inserts and deletes on two dimensional array.
 
 # Install
 
 - With [Composer](https://getcomposer.org)
 
         "require": {
-            "mesour/array-manager": "~0.0.2"
+            "tprochazka/array-manager": "1.0.0"
         }
 
 # Example array

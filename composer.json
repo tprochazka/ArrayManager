@@ -1,15 +1,20 @@
 {
-  "name": "mesour/array-manager",
-  "description": "Mesour ArrayManager.",
-  "license": ["BSD-3-Clause","GPL-3.0"],
+  "name": "tprochazka/array-manager",
+  "description": "Fixes issues for PHP 8 in original Mesour ArrayManager.",
+  "license": ["BSD-3-Clause","GPL-3.0-only"],
   "keywords": ["array mange","array"],
-  "homepage": "http://mesour.com",
+  "homepage": "https://github.com/tprochazka/ArrayManager",
   "authors": [{
       "name": "Matouš Němec",
       "homepage": "http://mesour.com"
+  },{
+    "name": "Tomáš Procházka"
   }],
   "require": {
     "php": ">=7.1.0"
+  },
+  "replace": {
+    "mesour/array-manager": "0.0.1"
   },
   "minimum-stability": "dev",
   "autoload": {
